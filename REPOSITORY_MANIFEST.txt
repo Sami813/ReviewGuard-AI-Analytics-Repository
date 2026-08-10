@@ -1,0 +1,17 @@
+ReviewGuard AI Analytics — Clean Repository Manifest
+
+Removed from the working folder:
+- old/broken/backup dashboard versions
+- duplicate dashboard variants
+- large derived prediction dumps
+- leave-one-generator-out intermediate model/vectoriser files
+- temporary development files
+
+Retained:
+- final working app.py
+- baseline and deployment models/vectorisers
+- datasets required for research reproduction
+- main result CSV files
+- training/evaluation scripts
+- dissertation figures
+- README.md, requirements.txt and .gitignore
