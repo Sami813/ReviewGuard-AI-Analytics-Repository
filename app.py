@@ -19,24 +19,24 @@ from sklearn.metrics import (
 # REVIEWGUARD AI ANALYTICS — SIGNATURE LIVE DASHBOARD
 # ============================================================
 
-BASE = os.path.dirname(os.path.abspath(__file__))
+BASE = r"D:\Trained Dataset files\Ahad Data Set"
 
-DEPLOY_MODEL = os.path.join(BASE, "models", "final_multigenerator_model.joblib")
-DEPLOY_TFIDF = os.path.join(BASE, "models", "final_multigenerator_tfidf.joblib")
-BASELINE_MODEL = os.path.join(BASE, "models", "best_fake_review_model.joblib")
-BASELINE_TFIDF = os.path.join(BASE, "models", "tfidf_vectorizer.joblib")
+DEPLOY_MODEL = os.path.join(BASE, "final_multigenerator_model.joblib")
+DEPLOY_TFIDF = os.path.join(BASE, "final_multigenerator_tfidf.joblib")
+BASELINE_MODEL = os.path.join(BASE, "best_fake_review_model.joblib")
+BASELINE_TFIDF = os.path.join(BASE, "tfidf_vectorizer.joblib")
 
-TRAIN_CSV = os.path.join(BASE, "data", "modern_fake_reviews_train.csv")
-VAL_CSV = os.path.join(BASE, "data", "modern_fake_reviews_validation.csv")
-TEST_CSV = os.path.join(BASE, "data", "modern_fake_reviews_test.csv")
+TRAIN_CSV = os.path.join(BASE, "modern_fake_reviews_train.csv")
+VAL_CSV = os.path.join(BASE, "modern_fake_reviews_validation.csv")
+TEST_CSV = os.path.join(BASE, "modern_fake_reviews_test.csv")
 
-BASELINE_RESULTS = os.path.join(BASE, "results", "baseline_model_results.csv")
-CONTROLLED_RESULTS = os.path.join(BASE, "results", "controlled_cross_generator_comparison.csv")
-LOGO_RESULTS = os.path.join(BASE, "results", "leave_one_generator_out_results.csv")
-PERF_CATEGORY = os.path.join(BASE, "results", "performance_by_category.csv")
-PERF_RATING = os.path.join(BASE, "results", "performance_by_rating.csv")
-PERF_LENGTH = os.path.join(BASE, "results", "performance_by_review_length.csv")
-MISCLASSIFIED = os.path.join(BASE, "results", "misclassified_reviews.csv")
+BASELINE_RESULTS = os.path.join(BASE, "baseline_model_results.csv")
+CONTROLLED_RESULTS = os.path.join(BASE, "controlled_cross_generator_comparison.csv")
+LOGO_RESULTS = os.path.join(BASE, "leave_one_generator_out_results.csv")
+PERF_CATEGORY = os.path.join(BASE, "performance_by_category.csv")
+PERF_RATING = os.path.join(BASE, "performance_by_rating.csv")
+PERF_LENGTH = os.path.join(BASE, "performance_by_review_length.csv")
+MISCLASSIFIED = os.path.join(BASE, "misclassified_reviews.csv")
 
 st.set_page_config(
     page_title="ReviewGuard AI Analytics",
